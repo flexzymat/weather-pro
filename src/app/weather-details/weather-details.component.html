@@ -1,0 +1,336 @@
+<div class="weather-details-container">
+    <div class="background-image-container">
+        <div class="background-image-div">
+            <img src="../assets/weather-det-img.jpg">
+        </div>
+    </div>
+    <div class="weather-title">
+        <p>Weather Details</p>
+    </div>
+    <div class="left-details">
+        <div class="location-details-left">
+            <div class="city-name">
+                  <p class="text-center">{{this.weatherData?.location?.name}}, {{this.weatherData?.location?.country}} </p>
+            </div>
+            <div class="city-date">
+                {{this.weatherData?.location?.localtime}}
+            </div>
+            <div class="city-temp">
+                {{this.weatherData?.current?.temperature}}°C
+            </div>
+        </div>
+    </div>
+    <div class="total-center-image-con">
+        <div class="weather-center-image-con">
+            <div class="center-image-div">
+                <img src="{{this.weatherData?.current?.weather_icons}}">
+                <!-- <i class="fa-solid fa-cloud" style="color: #93592a;"></i> -->
+            </div>
+            <div class="center-image-description">
+                <!-- SUNNY --><strong>{{this.weatherData?.current?.weather_descriptions}} </strong>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="all-weatherData-div"> -->
+        <div class="weatherData-main-container">
+            <div class="weatherData-details-right-container">
+                <div class="weatherdata-details-right">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="text-center">  wind speed:{{this.weatherData?.current?.wind_speed}}Km/h</p>
+                            <p class="text-center">  temperature:{{this.weatherData?.current?.temperature}}°C</p>
+                            <p class="text-center">  pressure: {{this.weatherData?.current?.pressure}}atm</p>
+                            <p class="text-center">  humidity:{{this.weatherData?.current?.humidity}}% </p>
+                            <p class="text-center">  visibility:{{this.weatherData?.current?.visibility}}Km</p>
+                            <p class="text-center">  weather description: {{this.weatherData?.current?.weather_descriptions}} </p>
+                            <!-- <p class="text-center">  location: Abuja, Nigeria. {{this.weatherData?.location?.name}}, {{this.weatherData?.location?.country}} </p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- </div> -->
+    <!-- <div class="all-info-container"> -->
+        <div class="main-weekly-info-container">
+            <div class="weekly-info-container">
+                <div class="weekly-info">
+                    <div>
+                        SUN
+                    </div>
+                    <div class="image">
+                        <img src="../assets/temp-img.jpg">
+                    </div> 
+                    <div>
+                        10C
+                    </div>
+                    <div>
+                        6C
+                    </div>
+                </div>
+                <div class="weekly-info">
+                    <div>
+                        MON
+                    </div>
+                    <div class="image">
+                        <img src="../assets/temp-img.jpg">
+                    </div> 
+                    <div>
+                        11C
+                    </div>
+                    <div>
+                        4C
+                    </div>
+                </div>
+                <div class="weekly-info">
+                    <div>
+                        TUE
+                    </div>
+                    <div class="image">
+                        <img src="../assets/temp-img.jpg">
+                    </div> 
+                    <div>
+                        12C
+                    </div>
+                    <div>
+                        3C
+                    </div>
+                </div>
+                <div class="weekly-info">
+                    <div>
+                        WED
+                    </div>
+                    <div class="image">
+                        <img src="../assets/temp-img.jpg">
+                    </div> 
+                    <div>
+                        10C
+                    </div>
+                    <div>
+                        6C
+                    </div>
+                </div>
+                <div class="weekly-info">
+                    <div>
+                        THU
+                    </div>
+                    <div class="image">
+                        <img src="../assets/temp-img.jpg">
+                    </div> 
+                    <div>
+                        10C
+                    </div>
+                    <div>
+                        6C
+                    </div>
+                </div>
+                <div class="weekly-info">
+                    <div>
+                        FRI
+                    </div>
+                    <div class="image">
+                        <img src="../assets/temp-img.jpg">
+                    </div> 
+                    <div>
+                        10C
+                    </div>
+                    <div>
+                        6C
+                    </div>
+                </div>
+                <div class="weekly-info">
+                    <div>
+                        SAT
+                    </div>
+                    <div class="image">
+                        <img src="../assets/temp-img.jpg">
+                    </div> 
+                    <div>
+                        10C
+                    </div>
+                    <div>
+                        6C
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- </div> -->
+</div>
+
+
+<!-- <div class="weather-details-container">
+    <div class="card-container">
+        <img class="image" src="../assets/weather-det-img.jpg">
+        <div class="card">
+            <div class="card-body">
+                <div class="weather-title-container">
+                <div class="weather-title">
+                    <h2>Weather details:</h2>
+                </div>
+                </div>
+                <div class="location-container-left">
+                    <div class="location-details-left">
+                        <div class="city-name">
+                            SOME CITY
+                        </div>
+                        <div class="city-date">
+                            April 15, 12:25 
+                        </div>
+                        <div class="city-temp">
+                            +10 C
+                        </div>
+                    </div>
+                </div>
+                <div class="weatherData-details-right-container">
+                    <div class="weatherdata-details-right">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="text-center">  wind speed: 80km/h{{this.weatherData?.current?.wind_speed}}</p>
+                                <p class="text-center">  temperature: 10C{{this.weatherData?.current?.temperature}}</p>
+                                <p class="text-center">  pressure: 300atm{{this.weatherData?.current?.pressure}}</p>
+                                <p class="text-center">  humidity: 70%{{this.weatherData?.current?.humidity}} </p>
+                                <p class="text-center">  visibility: 14km{{this.weatherData?.current?.visibility}}</p>
+                                <p class="text-center">  weather description: partly cloudy {{this.weatherData?.current?.weather_descriptions}} </p>
+                                <p class="text-center">  location: Abuja, Nigeria. {{this.weatherData?.location?.name}}, {{this.weatherData?.location?.country}} </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <div class="all-weather-middle-description">
+                <div class="weather-description-middle-con">
+                    <div class="weather-description-middle">
+                        <div class="weather-description-img">
+                            <img src="../assets/visibility-img.jpg">
+                            <span>Partly Cloudy</span>
+                        </div>
+                        <div class="discription">
+                            Partly Cloudy
+                        </div>
+                    </div>
+                </div>
+               </div>
+                <div class="weekly-info-container">
+                    <div class="weekly-info">
+                        <div>
+                            SUN
+                        </div>
+                        <div class="image">
+                            <img src="../assets/temp-img.jpg">
+                        </div> 
+                        <div>
+                            10C
+                        </div>
+                        <div>
+                            6C
+                        </div>
+                    </div>
+                    <div class="weekly-info">
+                        <div>
+                            MON
+                        </div>
+                        <div class="image">
+                            <img src="../assets/visibility-img.jpg">
+                        </div> 
+                        <div>
+                            11C
+                        </div>
+                        <div>
+                            5C
+                        </div>
+                    </div>
+                    <div class="weekly-info">
+                        <div>
+                            TUE
+                        </div>
+                        <div class="image">
+                            <img src="../assets/visibility-img.jpg">
+                        </div> 
+                        <div>
+                            12C
+                        </div>
+                        <div>
+                            3C
+                        </div>
+                    </div>
+                    <div class="weekly-info">
+                        <div>
+                            WED
+                        </div>
+                        <div class="image">
+                            <img src="../assets/temp-img.jpg">
+                        </div> 
+                        <div>
+                            12C
+                        </div>
+                        <div>
+                            5C
+                        </div>
+                    </div>
+                    <div class="weekly-info">
+                        <div>
+                            THU
+                        </div>
+                        <div class="image">
+                            <img src="../assets/temp-img.jpg">
+                        </div> 
+                        <div>
+                            10C
+                        </div>
+                        <div>
+                            6C
+                        </div>
+                    </div>
+                    <div class="weekly-info">
+                        <div>
+                            FRI
+                        </div>
+                        <div class="image">
+                            <img src="../assets/temp-img.jpg">
+                        </div> 
+                        <div>
+                            10C
+                        </div>
+                        <div>
+                            6C
+                        </div>
+                    </div>
+                    <div class="weekly-info">
+                        <div>
+                            SAT
+                        </div>
+                        <div class="image">
+                            <img src="../assets/visibility-img.jpg">
+                        </div> 
+                        <div>
+                            10C
+                        </div>
+                        <div>
+                            6C
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<!-- <div>
+    <div class="card">
+        <div class="card-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="text-center my-4">Weather Details:</h3>
+                        <p class="text-center"> current wind speed: {{this.weatherData?.current?.wind_speed}}</p>
+                        <p class="text-center"> current temperature in degree celcius: {{this.weatherData?.current?.temperature}}</p>
+                        <p class="text-center"> current pressure: {{this.weatherData?.current?.pressure}}</p>
+                        <p class="text-center"> current humidity check: {{this.weatherData?.current?.humidity}} </p>
+                        <p class="text-center"> curernt visibility: {{this.weatherData?.current?.visibility}}</p>
+                        <p class="text-center"> current weather description: {{this.weatherData?.current?.weather_descriptions}} </p>
+                        <p class="text-center"> searched location: {{this.weatherData?.location?.name}}, {{this.weatherData?.location?.country}} </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
